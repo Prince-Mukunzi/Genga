@@ -1,17 +1,93 @@
-# genga
+<div align="center">
 
-A new Flutter project.
+<img src="assets/images/app_logo.png" alt="Genga" width="96" />
 
-## Getting Started
+# Genga
 
-This project is a starting point for a Flutter application.
+**A calm, private money tracker built for mobile money.**
+Log spending in seconds, see where it went, and share a budget with the people you spend with.
 
-A few resources to get you started if this is your first Flutter project:
+</div>
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+<br />
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p align="center">
+  <img src="docs/screenshots/home.png" width="23%" alt="Home" />
+  <img src="docs/screenshots/add-transaction.png" width="23%" alt="Add transaction" />
+  <img src="docs/screenshots/analytics.png" width="23%" alt="Reports" />
+  <img src="docs/screenshots/settings.png" width="23%" alt="Settings" />
+</p>
+
+## Features
+
+### Your accounts, as a wallet
+Every account lives as a card in a wallet on the home screen, branded for MTN MoMo, Airtel Money, Bank of Kigali, Equity, I&M, NCBA and Access. See the balance, what you spent this month, and your latest transactions at a glance. A tap on the eye hides the numbers.
+
+### Log a transaction in a few taps
+A calculator-style keypad, category chips and a single button. Choose expense, income or transfer, set the account, add a note, and make it recurring if it repeats. The screen tells you what will be left in the account before you save.
+
+### MoMo fees, handled
+When you spend from a mobile money account, Genga offers to include the network fee for that amount, so your balance matches what the provider actually took.
+
+<p align="center">
+  <img src="docs/screenshots/momo-fee.png" width="28%" alt="MoMo fee prompt" />
+</p>
+
+### Reports that answer one question
+Week, month and year views show what you spent, your income, net, and fees, with a breakdown of where the money went by category. Export your transactions to CSV in one tap.
+
+### Spaces
+A space is a separate set of accounts and transactions: personal, household, a trip. Create as many as you need, switch between them from the home screen, and invite others by link or QR code.
+
+### Made for the way you actually pay
+- Dial your MoMo or bank balance through USSD straight from the app
+- Pay a contact from the pay screen
+- Auto-capture MoMo transactions
+- Recurring transactions with reminders
+- 21 default categories, fully editable
+- Home screen widget with balance and recent activity
+- Local-first: your data is stored on the device in SQLite
+
+## Tech stack
+
+| Area | Choice |
+| --- | --- |
+| Framework | Flutter, Dart 3 |
+| State | Riverpod |
+| Navigation | go_router |
+| Storage | Drift on SQLite |
+| Notifications | flutter_local_notifications |
+| Widgets | home_widget |
+| Sharing | share_plus, qr_flutter, app_links |
+
+## Project structure
+
+```
+lib/
+  app/          theme, router, app shell
+  core/         database, models, providers, services
+  features/     home, transactions, analytics, pay, settings, onboarding
+  shared/       widgets, animations, icons, brands
+```
+
+## Getting started
+
+Prerequisites: Flutter SDK matching `sdk: ^3.13.2` in `pubspec.yaml`, plus Xcode for iOS or Android Studio for Android.
+
+```bash
+git clone git@github.com:Prince-Mukunzi/Genga.git
+cd Genga
+flutter pub get
+dart run build_runner build --delete-conflicting-outputs
+flutter run
+```
+
+Run the tests:
+
+```bash
+flutter test
+```
+
+## Status
+
+Genga is under active development. Product analytics and crash reporting are present in the code but switched off until keys are configured.
