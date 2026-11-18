@@ -284,10 +284,12 @@ class SettingsScreen extends ConsumerWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 32),
             child: Text(
-              'When I\'m not coding, I\'m playing basketball, and yes, I\'m '
-              'actually good. I swim too, just don\'t ask how well. Golf '
-              'sometimes. And if there\'s a trail or a lake nearby, that\'s '
-              'where you\'ll find me.',
+              'I live in Kigali, Rwanda. I genuinely enjoy building things, '
+              'I care about pixel-perfect design, but I\'m now leaning toward '
+              'performance optimization. Other than that, I\'m playing '
+              'basketball (if you\'re reading this, there\'s a high chance '
+              'you can\'t guard me), swimming, and golf sometimes. Most of '
+              'all, Jesus is genuinely holding my life together.',
               textAlign: TextAlign.center,
               style: GengaTypography.subhead.copyWith(
                 color: GengaColors.textSecondary,
