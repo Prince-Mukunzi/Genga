@@ -61,7 +61,7 @@ Set up a Shortcut and an automation once. After that, when an MTN MoMo SMS arriv
 
 ## About the developer
 
-Claude couldn't generate my tone so here: I live in Kigali, Rwanda. I genuinely enjoy building things, I care about pixel-perfect design, but I'm now leaning toward performance optimization. Other than that, I'm playing basketball (if you're reading this, there's a high chance you can't guard me), swimming, and golf sometimes. Most of all, Jesus is genuinely holding my life together.
+Genga is built by Mukunzi in Kigali, Rwanda. The app has an about sheet in settings, if you want to say hi or buy a coffee.
 
 <p align="center">
   <img src="docs/screenshots/about.png" width="28%" alt="About the developer" />
